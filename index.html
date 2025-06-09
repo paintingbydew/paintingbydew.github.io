@@ -24,6 +24,10 @@ body {
 .gallery-item p {
     color: #c1aac6; /* Soft purple description */
 }
+.bg-white {
+        --tw-bg-opacity: 1;
+        background-color: rgb(255 255 255 / 26%);
+    }
         /* .paw-print {
             position: relative;
             display: inline-block;
@@ -32,25 +36,43 @@ body {
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="bg-white shadow-md py-0 sticky top-0 z-50">
-        <div class="container mx-auto px-6 flex justify-between items-center">
-            <div class="flex items-center">
-                <img src="images/logo.png" alt="Logo" class="w-40 h-40 object-contain filter drop-shadow-lg brightness-110">
-                <span class="ml-2 text-2xl font-bold text-teal-500"> <a href="#home">Paintingsbydew</a></span>
-            </div>
-            <div class="hidden md:flex items-center space-x-8">
-                <a href="#gallery" class="text-teal-500 hover:text-teal-600 transition">Gallery</a>
-                <a href="#process" class="text-teal-500 hover:text-teal-600 transition">Process</a>
-                <a href="#payment" class="text-teal-500 hover:text-teal-600 transition">Price list</a>
-                <a href="https://messenger.com/t/Paintingsbydew"  class="bg-teal-500 text-white px-4 py-2 rounded-lg hover:bg-teal-600 transition">Order Now</a>
-            </div>
-            <button class="md:hidden focus:outline-none">
-                <svg class="w-6 h-6 text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                </svg>
-            </button>
+ <!-- Navigation -->
+<nav class=" shadow-md py-0 sticky top-0 z-50" style="background-color: rgb(255 255 255 / 26%)">
+    <div class="container mx-auto px-6 flex justify-between items-center">
+        <!-- Logo and Title -->
+        <div class="flex items-center">
+            <img src="images/logo.png" alt="Logo" class="w-40 h-40 object-contain filter drop-shadow-lg brightness-110">
+            <span class="ml-2 text-2xl font-bold text-teal-500">
+                <a href="#home">Paintingsbydew</a>
+            </span>
         </div>
-    </nav>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex items-center space-x-8">
+            <a href="#gallery" class="text-teal-500 hover:text-teal-600 transition">Gallery</a>
+            <a href="#process" class="text-teal-500 hover:text-teal-600 transition">Process</a>
+            <a href="#payment" class="text-teal-500 hover:text-teal-600 transition">Price list</a>
+            <a href="https://messenger.com/t/Paintingsbydew" class="bg-teal-500 text-white px-4 py-2 rounded-lg hover:bg-teal-600 transition">Order Now</a>
+        </div>
+
+        <!-- Mobile menu toggle button -->
+        <button id="menu-toggle" class="md:hidden focus:outline-none">
+            <svg class="w-6 h-6 text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+        </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+        <a href="#gallery" class="block py-2 text-teal-500 hover:text-teal-600">Gallery</a>
+        <a href="#process" class="block py-2 text-teal-500 hover:text-teal-600">Process</a>
+        <a href="#payment" class="block py-2 text-teal-500 hover:text-teal-600">Price list</a>
+        <a href="https://messenger.com/t/Paintingsbydew" class="block mt-2 bg-teal-500 text-white text-center px-4 py-2 rounded-lg hover:bg-teal-600 transition">Order Now</a>
+    </div>
+</nav>
+
     <!-- Hero Section -->
     <section id="home" class="hero-pattern py-20 md:py-32">
         <div class="container mx-auto px-6">
@@ -296,6 +318,13 @@ body {
         </div>
     </div>
 </section>
+
+<!-- Back to Top Button -->
+<button id="backToTop" class="fixed bottom-6 right-6 p-3 rounded-full bg-gradient-to-r from-teal-500 to-purple-500 text-white shadow-lg hover:from-teal-600 hover:to-purple-600 transform transition-transform duration-300 scale-0">
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+    </svg>
+</button>
 <!-- Footer -->
 <footer class="bg-teal-800 text-teal-100 py-10">
     <div class="container mx-auto px-6">
@@ -355,7 +384,12 @@ body {
         </div>
     </div>
 </footer>
-
+<!-- Back to Top Button -->
+<button id="backToTop" class="fixed bottom-6 right-6 p-3 rounded-full bg-gradient-to-r from-teal-500 to-purple-500 text-white shadow-lg hover:from-teal-600 hover:to-purple-600 transform transition-transform duration-300 scale-0 z-40">
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+    </svg>
+</button>
     <script>
         document.getElementById('contactForm').addEventListener('submit', function(e) {
             e.preventDefault();
@@ -385,6 +419,30 @@ window.addEventListener('scroll', () => {
     } else {
         nav.classList.remove('bg-opacity-90', 'backdrop-filter', 'backdrop-blur');
     }
+});
+const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuToggle.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
+    const backToTopBtn = document.getElementById('backToTop');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+        backToTopBtn.classList.remove('scale-0');
+        backToTopBtn.classList.add('scale-100');
+    } else {
+        backToTopBtn.classList.remove('scale-100');
+        backToTopBtn.classList.add('scale-0');
+    }
+});
+
+backToTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
 });
     </script>
 <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'94c1ba41b1a3a13e',t:'MTc0OTMxNTg1Ni4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
