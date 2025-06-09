@@ -8,18 +8,26 @@
     <title>Paintingsbydew | Custom Dog Paintings</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"  integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #f8f5f2;
-        }
-        .hero-pattern {
-            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23f0e6d2' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-        }
-        .paw-print {
+body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #fff2c5; /* Warm yellow background */
+    }
+    .hero-pattern {
+        background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23c1aac6' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zM0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+    /* In your style tag */
+.gallery-item h3 {
+    color: #65bab2; /* Teal title */
+}
+.gallery-item p {
+    color: #c1aac6; /* Soft purple description */
+}
+        /* .paw-print {
             position: relative;
             display: inline-block;
-        }
+        } */
     </style>
 </head>
 <body>
@@ -28,33 +36,31 @@
         <div class="container mx-auto px-6 flex justify-between items-center">
             <div class="flex items-center">
                 <img src="images/logo.png" alt="Logo" class="w-40 h-40 object-contain filter drop-shadow-lg brightness-110">
-    
-                <span class="ml-2 text-2xl font-bold text-amber-800">Paintingsbydew</span>
+                <span class="ml-2 text-2xl font-bold text-teal-500"> <a href="#home">Paintingsbydew</a></span>
             </div>
             <div class="hidden md:flex items-center space-x-8">
-                <a href="#gallery" class="text-amber-800 hover:text-amber-600 transition">Gallery</a>
-                <a href="#process" class="text-amber-800 hover:text-amber-600 transition">Process</a>
-                <a href="#payment" class="text-amber-800 hover:text-amber-600 transition">Price list</a>
-                <a href="https://messenger.com/t/Paintingsbydew"  class="bg-amber-600 text-white px-4 py-2 rounded-lg hover:bg-amber-700 transition">Order Now</a>
+                <a href="#gallery" class="text-teal-500 hover:text-teal-600 transition">Gallery</a>
+                <a href="#process" class="text-teal-500 hover:text-teal-600 transition">Process</a>
+                <a href="#payment" class="text-teal-500 hover:text-teal-600 transition">Price list</a>
+                <a href="https://messenger.com/t/Paintingsbydew"  class="bg-teal-500 text-white px-4 py-2 rounded-lg hover:bg-teal-600 transition">Order Now</a>
             </div>
             <button class="md:hidden focus:outline-none">
-                <svg class="w-6 h-6 text-amber-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg class="w-6 h-6 text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                 </svg>
             </button>
         </div>
     </nav>
-
     <!-- Hero Section -->
-    <section class="hero-pattern py-20 md:py-32">
+    <section id="home" class="hero-pattern py-20 md:py-32">
         <div class="container mx-auto px-6">
             <div class="flex flex-col md:flex-row items-center">
                 <div class="md:w-1/2 mb-10 md:mb-0">
-                    <h1 class="text-4xl md:text-5xl font-bold text-amber-800 leading-tight">Custom Pet Portraits That Capture Your Dog's Personality</h1>
-                    <p class="mt-4 text-lg text-amber-700">Transform your favorite photos into stunning, one-of-a-kind paintings that celebrate your furry friend.</p>
+                    <h1 class="text-4xl md:text-5xl font-bold text-teal-700 leading-tight">Custom Pet Portraits That Capture Your Dog's Personality</h1>
+                    <p class="mt-4 text-lg text-purple-600">Transform your favorite photos into stunning, one-of-a-kind paintings that celebrate your furry friend.</p>
                     <div class="mt-8 flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-                        <a href="#gallery" class="bg-amber-600 text-white px-6 py-3 rounded-lg text-center hover:bg-amber-700 transition">See My Work</a>
-                        <a href="#payment" class="border-2 border-amber-600 text-amber-600 px-6 py-3 rounded-lg text-center hover:bg-amber-50 transition">Get a Quote</a>
+                        <a href="#gallery" class="bg-teal-500 text-white px-6 py-3 rounded-lg text-center hover:bg-teal-600 transition">See My Work</a>
+                        <a href="#payment" class="border-2 border-teal-500 text-teal-700 px-6 py-3 rounded-lg text-center hover:bg-teal-50 transition">Get a Quote</a>
                     </div>
                 </div>
                 <div class="md:w-1/2 flex justify-center">
@@ -96,7 +102,7 @@
                             <path d="M150 60 C160 50, 170 55, 175 65" stroke="#6b4f2d" stroke-width="2" fill="none"/>
                         </svg>
                     </div>
-                    <div class="p-6">
+                    <div class="p-6 gallery-item">
                         <h3 class="font-bold text-xl text-amber-800">Golden Retriever</h3>
                         <p class="text-amber-600 mt-2">Acrylic on canvas, 16" x 20"</p>
                     </div>
@@ -114,7 +120,7 @@
                             <path d="M160 70 C170 50, 180 60, 175 75" stroke="#333" stroke-width="2" fill="none"/>
                         </svg>
                     </div>
-                    <div class="p-6">
+                    <div class="p-6 gallery-item">
                         <h3 class="font-bold text-xl text-amber-800">Husky</h3>
                         <p class="text-amber-600 mt-2">Watercolor, 11" x 14"</p>
                     </div>
@@ -132,7 +138,7 @@
                             <path d="M145 50 C155 40, 165 45, 170 55" stroke="#4a3520" stroke-width="3" fill="none"/>
                         </svg>
                     </div>
-                    <div class="p-6">
+                    <div class="p-6 gallery-item">
                         <h3 class="font-bold text-xl text-amber-800">Pug</h3>
                         <p class="text-amber-600 mt-2">Oil on canvas, 12" x 12"</p>
                     </div>
@@ -145,231 +151,210 @@
     </section>
 
     <!-- Process Section -->
-    <section id="process" class="py-16 bg-amber-50">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center text-amber-800 mb-12">How It Works</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-lg shadow-md text-center">
-                    <div class="w-16 h-16 bg-amber-200 rounded-full flex items-center justify-center mx-auto mb-6">
-                        <svg class="w-8 h-8 text-amber-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"></path>
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-amber-800 mb-3">1. Send Photos</h3>
-                    <p class="text-amber-700">Share your favorite photos of your dog, including any specific poses or expressions you love.</p>
+<!-- Process Section -->
+<section id="process" class="py-16 bg-purple-50">
+    <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center text-teal-800 mb-12">How It Works</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-8 rounded-lg shadow-md text-center transform transition duration-300 hover:scale-105">
+                <div class="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <svg class="w-8 h-8 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                    </svg>
                 </div>
-                
-                <div class="bg-white p-8 rounded-lg shadow-md text-center">
-                    <div class="w-16 h-16 bg-amber-200 rounded-full flex items-center justify-center mx-auto mb-6">
-                        <svg class="w-8 h-8 text-amber-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-amber-800 mb-3">2. Approve Sketch</h3>
-                    <p class="text-amber-700">I'll create a preliminary sketch for your approval before beginning the final painting.</p>
+                <h3 class="text-xl font-bold text-teal-700 mb-3">1. Send Photos</h3>
+                <p class="text-purple-700">Share your favorite photos of your dog, including any specific poses or expressions you love.</p>
+            </div>
+            <div class="bg-white p-8 rounded-lg shadow-md text-center transform transition duration-300 hover:scale-105">
+                <div class="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <svg class="w-8 h-8 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path>
+                    </svg>
                 </div>
-                
-                <div class="bg-white p-8 rounded-lg shadow-md text-center">
-                    <div class="w-16 h-16 bg-amber-200 rounded-full flex items-center justify-center mx-auto mb-6">
-                        <svg class="w-8 h-8 text-amber-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-amber-800 mb-3">3. Receive Your Art</h3>
-                    <p class="text-amber-700">Your finished portrait will be carefully packaged and shipped to your door, ready to display.</p>
+                <h3 class="text-xl font-bold text-teal-700 mb-3">2. Approve Sketch</h3>
+                <p class="text-purple-700">I'll create a preliminary sketch for your approval before beginning the final painting.</p>
+            </div>
+            <div class="bg-white p-8 rounded-lg shadow-md text-center transform transition duration-300 hover:scale-105">
+                <div class="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <svg class="w-8 h-8 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
+                    </svg>
                 </div>
+                <h3 class="text-xl font-bold text-teal-700 mb-3">3. Receive Your Art</h3>
+                <p class="text-purple-700">Your finished portrait will be carefully packaged and shipped to your door, ready to display.</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Contact Section -->
-    <!-- <section id="contact" class="py-16 bg-white">
-        <div class="container mx-auto px-6">
-            <div class="max-w-3xl mx-auto">
-                <h2 class="text-3xl font-bold text-center text-amber-800 mb-12">Ready to Immortalize Your Furry Friend?</h2>
-                <div class="bg-amber-50 p-8 rounded-lg shadow-md">
-                    <form id="contactForm" class="space-y-6">
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <div>
-                                <label for="name" class="block text-amber-800 font-medium mb-2">Your Name</label>
-                                <input type="text" id="name" class="w-full px-4 py-2 border border-amber-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500">
-                            </div>
-                            <div>
-                                <label for="email" class="block text-amber-800 font-medium mb-2">Email Address</label>
-                                <input type="email" id="email" class="w-full px-4 py-2 border border-amber-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500">
-                            </div>
-                        </div>
-                        <div>
-                            <label for="message" class="block text-amber-800 font-medium mb-2">Tell Me About Your Dog</label>
-                            <textarea id="message" rows="4" class="w-full px-4 py-2 border border-amber-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500"></textarea>
-                        </div>
-                        <div class="text-center">
-                            <button type="submit" id="submitBtn" class="bg-amber-600 text-white px-8 py-3 rounded-lg hover:bg-amber-700 transition">Get Started</button>
-                        </div>
-                    </form>
-                </div>
-                <div id="thankYouMessage" class="hidden mt-6 p-4 bg-green-100 text-green-700 rounded-lg text-center">
-                    Thank you for your message! I'll get back to you within 48 hours.
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <section id="payment" class="py-16 bg-white">
-        <div class="container mx-auto px-6">
-          <div class="max-w-4xl mx-auto">
-            <h2 class="text-3xl font-bold text-center text-amber-800 mb-12">🎨 Choose Your Custom Painting Style</h2>
-      
+<!-- Payment Section -->
+<section id="payment" class="py-16 bg-white">
+    <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-center text-teal-800 mb-12">🎨 Choose Your Custom Painting Style</h2>
+            
             <!-- Pricing Cards -->
-            <div class="bg-amber-50 p-8 rounded-lg shadow-md space-y-8">
-      
-              <!-- Acrylic Paintings -->
-              <div class="border-b border-amber-200 pb-6 flex flex-col md:flex-row gap-6">
-                <div class="md:w-1/3">
-                  <img src="https://via.placeholder.com/300x200?text=Acrylic+Painting" alt="Acrylic Painting Preview" class="rounded-md object-cover w-full h-full">
-                </div>
-                <div class="md:w-2/3">
-                  <h3 class="text-xl font-semibold text-amber-700 mb-2">Acrylic Painting</h3>
-                  <ul class="space-y-2 text-amber-800 list-disc pl-5">
-                    <li>A4 SIZE (20 X 30CM) – RS.4500/=</li>
-                    <li>A3 SIZE (30 X 40CM) – RS.6500/=</li>
-                    <li>SQUARE & ROUND SHAPE (20 X 20CM) – RS.2500/=</li>
-                    <li>CANVAS WITHOUT FRAME (20x25CM) – RS.2600/=</li>
-                  </ul>
-                  <div class="mt-4">
-                    <a href="https://messenger.com/t/Paintingsbydew" 
-                       target="_blank" 
-                       class="inline-block bg-gradient-to-r from-amber-500 to-yellow-500 text-white px-6 py-2 rounded-md hover:from-amber-600 hover:to-yellow-600 transition duration-300 shadow-sm">
-                      Order Acrylic Painting
-                    </a>
-                  </div>
-                </div>
-              </div>
-      
-              <!-- Oil Paintings -->
-              <div class="border-b border-amber-200 pb-6 flex flex-col md:flex-row gap-6">
-                <div class="md:w-1/3">
-                  <img src="https://via.placeholder.com/300x200?text=Oil+Painting" alt="Oil Painting Preview" class="rounded-md object-cover w-full h-full">
-                </div>
-                <div class="md:w-2/3">
-                  <h3 class="text-xl font-semibold text-amber-700 mb-2">Oil Painting</h3>
-                  <ul class="space-y-2 text-amber-800 list-disc pl-5">
-                    <li>A4 SIZE (20 X 30CM) – RS.6500/=</li>
-                    <li>A3 SIZE (30 X 40CM) – RS.8500/=</li>
-                    <li>CANVAS WITHOUT FRAME (20x25CM) – RS.4200/=</li>
-                  </ul>
-                  <div class="mt-4">
-                    <a href="https://messenger.com/t/Paintingsbydew" 
-                       target="_blank" 
-                       class="inline-block bg-gradient-to-r from-amber-500 to-yellow-500 text-white px-6 py-2 rounded-md hover:from-amber-600 hover:to-yellow-600 transition duration-300 shadow-sm">
-                      Order Oil Painting
-                    </a>
-                  </div>
-                </div>
-              </div>
-      
-              <!-- Textured Paintings -->
-              <div class="border-b border-amber-200 pb-6 flex flex-col md:flex-row gap-6">
-                <div class="md:w-1/3">
-                  <img src="https://via.placeholder.com/300x200?text=Textured+Painting" alt="Textured Painting Preview" class="rounded-md object-cover w-full h-full">
-                </div>
-                <div class="md:w-2/3">
-                  <h3 class="text-xl font-semibold text-amber-700 mb-2">Textured Painting</h3>
-                  <ul class="space-y-2 text-amber-800 list-disc pl-5">
-                    <li>A4 SIZE (20 X 30CM) – RS.5500/=</li>
-                    <li>A3 SIZE (30 X 40CM) – RS.7500/=</li>
-                  </ul>
-                  <div class="mt-4">
-                    <a href="https://messenger.com/t/Paintingsbydew" 
-                       target="_blank" 
-                       class="inline-block bg-gradient-to-r from-amber-500 to-yellow-500 text-white px-6 py-2 rounded-md hover:from-amber-600 hover:to-yellow-600 transition duration-300 shadow-sm">
-                      Order Textured Painting
-                    </a>
-                  </div>
-                </div>
-              </div>
-      
-              <!-- Miniature Paintings -->
-              <div class="flex flex-col md:flex-row gap-6">
-                <div class="md:w-1/3">
-                  <img src="https://via.placeholder.com/300x200?text=Miniature+Painting" alt="Miniature Painting Preview" class="rounded-md object-cover w-full h-full">
-                </div>
-                <div class="md:w-2/3">
-                  <h3 class="text-xl font-semibold text-amber-700 mb-2">Miniature Painting</h3>
-                  <ul class="space-y-2 text-amber-800 list-disc pl-5">
-                    <li>4X4 INCHES WITH STAND – RS.1000/=</li>
-                  </ul>
-                  <div class="mt-4">
-                    <a href="https://messenger.com/t/Paintingsbydew" 
-                       target="_blank" 
-                       class="inline-block bg-gradient-to-r from-amber-500 to-yellow-500 text-white px-6 py-2 rounded-md hover:from-amber-600 hover:to-yellow-600 transition duration-300 shadow-sm">
-                      Order Miniature Painting
-                    </a>
-                  </div>
-                </div>
-              </div>
-      
-              <!-- Final CTA -->
-              <div class="mt-8 text-center">
-                <p class="text-amber-800 mb-4">Prefer to discuss your custom request?</p>
-                <a href="https://messenger.com/t/Paintingsbydew" target="_blank" class="inline-block glow-button bg-gradient-to-r from-indigo-500 to-purple-600 px-8 py-4 rounded-md text-xl font-bold hover:from-indigo-600 hover:to-purple-700 transition-all duration-300 shadow-lg pulse">
-                  👉 Message Us Now!
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    <!-- Footer -->
-    <footer class="bg-amber-800 text-amber-100 py-10">
-        <div class="container mx-auto px-6">
-            <div class="flex flex-col md:flex-row justify-between items-center">
-                <div class="mb-6 md:mb-0">
-                    <div class="flex items-center">
-                        <svg class="w-8 h-8 text-amber-200" viewBox="0 0 64 64" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <!-- Dog Body -->
-                            <circle cx="32" cy="40" r="14" fill="#f1c27d"/>
-                            <!-- Head -->
-                            <circle cx="32" cy="26" r="10" fill="#f1c27d"/>
-                            <!-- Ears -->
-                            <ellipse cx="24" cy="20" rx="3" ry="6" fill="#d9a75e"/>
-                            <ellipse cx="40" cy="20" rx="3" ry="6" fill="#d9a75e"/>
-                            <!-- Eyes -->
-                            <circle cx="29" cy="25" r="1.5" fill="#000"/>
-                            <circle cx="35" cy="25" r="1.5" fill="#000"/>
-                            <!-- Nose -->
-                            <circle cx="32" cy="28" r="1.5" fill="#000"/>
-                            <!-- Mouth -->
-                            <path d="M29 30 Q32 32 35 30" stroke="#000" stroke-width="1" fill="none" stroke-linecap="round"/>
-                        </svg>
-                        <span class="ml-2 text-xl font-bold">Paintingsbydew</span>
+            <div class="bg-purple-50 p-8 rounded-lg shadow-md space-y-8">
+                
+                <!-- Acrylic Paintings -->
+                <div class="border-b border-purple-200 pb-6 flex flex-col md:flex-row gap-6">
+                    <div class="md:w-1/3">
+                        <img src="https://via.placeholder.com/300x200?text=Acrylic+Painting" alt="Acrylic Painting Preview" class="rounded-md object-cover w-full h-full">
                     </div>
-                    <p class="mt-2">Capturing the spirit of your canine companion.</p>
+                    <div class="md:w-2/3">
+                        <h3 class="text-xl font-semibold text-teal-700 mb-2">Acrylic Painting</h3>
+                        <ul class="space-y-2 text-teal-800 list-disc pl-5">
+                            <li>A4 SIZE (20 X 30CM) – RS.4500/=</li>
+                            <li>A3 SIZE (30 X 40CM) – RS.6500/=</li>
+                            <li>SQUARE & ROUND SHAPE (20 X 20CM) – RS.2500/=</li>
+                            <li>CANVAS WITHOUT FRAME (20x25CM) – RS.2600/=</li>
+                        </ul>
+                        <div class="mt-4">
+                            <a href="https://messenger.com/t/Paintingsbydew" 
+                               target="_blank" 
+                               class="inline-block bg-gradient-to-r from-teal-500 to-purple-500 text-white px-6 py-2 rounded-md hover:from-teal-600 hover:to-purple-600 transition duration-300 shadow-sm">
+                              Order Acrylic Painting
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="flex space-x-4">
-                    <a href="#" class="hover:text-amber-300 transition">
-                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                        </svg>
-                    </a>
-                    <a href="#" class="hover:text-amber-300 transition">
-                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/>
-                        </svg>
-                    </a>
-                    <a href="#" class="hover:text-amber-300 transition">
-                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723 10.054 10.054 0 01-3.127 1.195 4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
-                        </svg>
+
+                <!-- Oil Paintings -->
+                <div class="border-b border-purple-200 pb-6 flex flex-col md:flex-row gap-6">
+                    <div class="md:w-1/3">
+                        <img src="https://via.placeholder.com/300x200?text=Oil+Painting" alt="Oil Painting Preview" class="rounded-md object-cover w-full h-full">
+                    </div>
+                    <div class="md:w-2/3">
+                        <h3 class="text-xl font-semibold text-teal-700 mb-2">Oil Painting</h3>
+                        <ul class="space-y-2 text-teal-800 list-disc pl-5">
+                            <li>A4 SIZE (20 X 30CM) – RS.6500/=</li>
+                            <li>A3 SIZE (30 X 40CM) – RS.8500/=</li>
+                            <li>CANVAS WITHOUT FRAME (20x25CM) – RS.4200/=</li>
+                        </ul>
+                        <div class="mt-4">
+                            <a href="https://messenger.com/t/Paintingsbydew" 
+                               target="_blank" 
+                               class="inline-block bg-gradient-to-r from-teal-500 to-purple-500 text-white px-6 py-2 rounded-md hover:from-teal-600 hover:to-purple-600 transition duration-300 shadow-sm">
+                              Order Oil Painting
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Textured Paintings -->
+                <div class="border-b border-purple-200 pb-6 flex flex-col md:flex-row gap-6">
+                    <div class="md:w-1/3">
+                        <img src="https://via.placeholder.com/300x200?text=Textured+Painting" alt="Textured Painting Preview" class="rounded-md object-cover w-full h-full">
+                    </div>
+                    <div class="md:w-2/3">
+                        <h3 class="text-xl font-semibold text-teal-700 mb-2">Textured Painting</h3>
+                        <ul class="space-y-2 text-teal-800 list-disc pl-5">
+                            <li>A4 SIZE (20 X 30CM) – RS.5500/=</li>
+                            <li>A3 SIZE (30 X 40CM) – RS.7500/=</li>
+                        </ul>
+                        <div class="mt-4">
+                            <a href="https://messenger.com/t/Paintingsbydew" 
+                               target="_blank" 
+                               class="inline-block bg-gradient-to-r from-teal-500 to-purple-500 text-white px-6 py-2 rounded-md hover:from-teal-600 hover:to-purple-600 transition duration-300 shadow-sm">
+                              Order Textured Painting
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Miniature Paintings -->
+                <div class="flex flex-col md:flex-row gap-6">
+                    <div class="md:w-1/3">
+                        <img src="https://via.placeholder.com/300x200?text=Miniature+Painting" alt="Miniature Painting Preview" class="rounded-md object-cover w-full h-full">
+                    </div>
+                    <div class="md:w-2/3">
+                        <h3 class="text-xl font-semibold text-teal-700 mb-2">Miniature Painting</h3>
+                        <ul class="space-y-2 text-teal-800 list-disc pl-5">
+                            <li>4X4 INCHES WITH STAND – RS.1000/=</li>
+                        </ul>
+                        <div class="mt-4">
+                            <a href="https://messenger.com/t/Paintingsbydew" 
+                               target="_blank" 
+                               class="inline-block bg-gradient-to-r from-teal-500 to-purple-500 text-white px-6 py-2 rounded-md hover:from-teal-600 hover:to-purple-600 transition duration-300 shadow-sm">
+                              Order Miniature Painting
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Final CTA -->
+                <div class="mt-8 text-center">
+                    <p class="text-teal-800 mb-4">Prefer to discuss your custom request?</p>
+                    <a href="https://messenger.com/t/Paintingsbydew" 
+                       target="_blank" 
+                       class="inline-block glow-button bg-gradient-to-r from-teal-500 to-purple-600 px-8 py-4 rounded-md text-xl font-bold hover:from-teal-600 hover:to-purple-700 transition-all duration-300 shadow-lg pulse">
+                      👉 Message Us Now!
                     </a>
                 </div>
-            </div>
-            <div class="mt-8 text-center text-amber-300">
-                <p>© 2025  Paintingsbydew. All rights reserved.</p>
-                <p>Powered by <a href="https://www.facebook.com/HelaOpps" target="_blank">HelaOpps</a></p>
             </div>
         </div>
-    </footer>
+    </div>
+</section>
+<!-- Footer -->
+<footer class="bg-teal-800 text-teal-100 py-10">
+    <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-6 md:mb-0">
+                <div class="flex items-center">
+                    <!-- Dog SVG Icon -->
+                    <svg class="w-8 h-8 text-teal-200" viewBox="0 0 64 64" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Dog Body -->
+                        <circle cx="32" cy="40" r="14" fill="#fff2c5"/>
+                        <!-- Head -->
+                        <circle cx="32" cy="26" r="10" fill="#fff2c5"/>
+                        <!-- Ears -->
+                        <ellipse cx="24" cy="20" rx="3" ry="6" fill="#c1aac6"/>
+                        <ellipse cx="40" cy="20" rx="3" ry="6" fill="#c1aac6"/>
+                        <!-- Eyes -->
+                        <circle cx="29" cy="25" r="1.5" fill="#000"/>
+                        <circle cx="35" cy="25" r="1.5" fill="#000"/>
+                        <!-- Nose -->
+                        <circle cx="32" cy="28" r="1.5" fill="#000"/>
+                        <!-- Mouth -->
+                        <path d="M29 30 Q32 32 35 30" stroke="#000" stroke-width="1" fill="none" stroke-linecap="round"/>
+                    </svg>
+                    <span class="ml-2 text-xl font-bold">Paintingsbydew</span>
+                </div>
+                <p class="mt-2">Capturing the spirit of your canine companion.</p>
+            </div>
+
+   <!-- Social Media Icons -->
+<div class="flex space-x-4">
+           <!-- Instagram -->
+           <a href="https://www.instagram.com/paintings_by_dew"  target="_blank" class="hover:text-teal-300 transition duration-300 text-2xl" title="Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+
+        <!-- Facebook -->
+        <a href="https://web.facebook.com/Paintingsbydew/"  target="_blank" class="hover:text-teal-300 transition duration-300 text-2xl" title="Facebook">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+
+        <!-- WhatsApp -->
+        <a href="https://wa.me/94768837609"  target="_blank" class="hover:text-teal-300 transition duration-300 text-2xl" title="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+
+        <!-- TikTok -->
+        <a href="https://www.tiktok.com/@dew_diaz"  target="_blank" class="hover:text-teal-300 transition duration-300 text-2xl" title="TikTok">
+            <i class="fab fa-tiktok"></i>
+        </a>
+</div>
+        </div>
+
+        <!-- Bottom Text -->
+        <div class="mt-8 text-center text-teal-300">
+            <p>© 2025 Paintingsbydew. All rights reserved.</p>
+            <p>Powered by <a href="https://www.facebook.com/HelaOpps"  target="_blank" class="underline hover:text-white transition">HelaOpps</a></p>
+        </div>
+    </div>
+</footer>
 
     <script>
         document.getElementById('contactForm').addEventListener('submit', function(e) {
